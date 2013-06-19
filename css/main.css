@@ -1,0 +1,544 @@
+/* Team Zephyr
+ * CMU MHCI 2012-2013
+ * Author: Jason Block
+ */
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* fde670 yellow */
+
+body {
+    font-family: "Titillium Web";
+    background: #f2f8f7;
+    color: #444;
+}
+
+header {
+    background: #213142;
+    border-bottom: 4px solid #4b6f96;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 50px 0px 52px 3px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    -webkit-transition: all .05s ease-out;
+    margin-bottom: -4px;
+}
+
+nav li a:hover {
+    border-bottom: 10px solid #fde670;
+    padding-bottom: 46px;
+}
+
+nav li a.current {
+    border-bottom: 10px solid #4b6f96;
+    padding-bottom: 46px;
+    color: #f2f8f7;
+}
+
+nav li a.current:hover {
+    border-color: #fde670;
+}
+
+nav a span {
+    text-transform: none;
+    font-weight: 500;
+    display: block;
+}
+
+.main.home {
+    background: url(../images/zephyr-team-mono.jpg) bottom center no-repeat;
+}
+
+.main .wrap {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.main .bot-cen {
+    position: absolute;
+    width: 150px;
+    bottom: 5px;
+    left: 388px;
+    padding: 9px 17px;
+/*    background: rgb(242, 248, 247);
+    background: rgba(242, 248, 247, .4);*/
+    text-shadow: 0 0 10px rgba(0,0,0,.2);
+    text-align: center;
+    color: rgb(242, 248, 247);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-transition: all .1s ease-out;
+}
+
+.bot-cen:hover {
+    color: #444;
+    text-shadow: 0 0 0 transparent;
+    background: rgb(242, 248, 247);
+}
+
+.hero {
+    margin-bottom: 440px;
+}
+
+.hero h1 {
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 42px;
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 100;
+}
+
+.hero h1 a {
+    border-bottom: 1px dotted;
+    text-decoration: none;
+    color: #444;
+    -webkit-transition: all .1s ease-out;
+}
+
+.hero h1 a:hover {
+    color: #4b6f96;
+    background: #fde670;
+}
+
+.hero .btn {
+    display: inline-block;
+    color: white;
+    background: #213142;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.hero a:hover {
+    background: #4b6f96;
+}
+
+.content .wrap{
+    padding: 34px 0;
+}
+
+.rt_content .first, .rt_content p:first-child {
+    font-size: 1.2em;
+}
+
+.content h2 {
+    font-weight: 700;
+}
+
+.content .rt_content {
+    padding-top: 6px;
+}
+
+.rt_content a, .main p a {
+    border-bottom: 1px dotted;
+    text-decoration: none;
+    color: #4b6f96;
+}
+
+.rt_content a:hover, .main p a:hover {
+    color: #4b6f96;
+    background: #fde670;
+}
+
+.team-bios-intro {
+    /*border-bottom: 1px solid #ccc;*/
+    background: url(../images/zephyr-team-mono.jpg) bottom center no-repeat;
+    width: 960px;
+    height: 468px;
+    /*border-bottom: 1px solid #ccc;*/
+    /*margin-top: -68px;*/
+}
+
+.meet-the-team-bios {
+    /*padding-left: 100px !important;*/
+    width: 855px !important;
+    font-size: 14px;
+    margin-bottom: 34px;
+    /*margin-top: 395px;*/
+}
+
+.meet-the-team-bios .person {
+    font-size: 11px;
+}
+
+.jonas {
+    width: 150px !important;
+    border-top: 10px solid #203041;
+}
+
+.john {
+    border-top: 10px solid #d1c0ad;
+    width: 145px !important;
+}
+
+.rebecca {
+    border-top: 10px solid #fce570;
+}
+
+.jason {
+    border-top: 10px solid #68203a;
+}
+
+.arthur {
+    border-top: 10px solid #bddcd6;
+}
+
+.meet-the-team h1 {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 100;
+    text-align: center;
+    z-index: 10;
+}
+
+.meet-the-team-bios h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.meet-the-team-bios h4 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+footer {
+    padding: 34px 0;
+}
+
+hr {
+    margin-bottom: 34px;
+}
+
+footer p {
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 1.4em;
+}
+
+footer a {
+    color: #4b6f96;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background: #fde670;
+}
+
+.img_link:hover {
+    background: transparent;
+}
+
+footer h4 {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    padding: 0;
+    margin: 11px 0 1.4em 0;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 11px;
+}
+
+footer ul li a {
+    line-height: 17px;
+    color: #4b6f96;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

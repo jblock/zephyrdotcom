@@ -1,0 +1,46 @@
+desc "launch preview"
+task :preview do
+	system "bundle exec jekyll --auto --server"
+end
+
+desc "build"
+task :build do
+	system "bundle exec jekyll"
+end
+
+desc "build for testing"
+task :buildtest do
+	system "bundle exec jekyll --base-url '/projects/zephyr'"
+end
+
+desc "build for HCII site"
+task :buildprod do
+	system "bundle exec jekyll --base-url '/M-HCI/2013/Zephyr'"
+end
+
+desc "package"
+task :package do
+	ENV['JEKYLL_ENV'] = 'production'
+  
+  Rake::Task["build"].invoke
+
+  require 'jammit'
+
+  puts "Compressing assets..."
+  system "bundle exec jammit -o _site/css -c _assets.yml -p css/style"
+  puts "done."
+end
+
+# desc "deploy"
+# task :deploy => :build do
+# 	puts "Deploying to server"
+# 	system "rsync -rtz --delete _site/ jasonthe@jasontheblock.com:~/public_html/"
+# 	puts "Done!"
+# end
+
+desc "jtb"
+task :jtb => :buildtest do
+	puts "Deploying to server"
+	system "rsync -rtz --delete _site/ /Users/jasontheblock/code/jblockdotcom/projects/zephyr && cd /Users/jasontheblock/code/jblockdotcom/ && rake deploy"
+	puts "Done!"
+end
