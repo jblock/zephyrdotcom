@@ -1,6 +1,6 @@
 /* Team Zephyr
  * CMU MHCI 2012-2013
- * Author: Jason Block
+ * Author: Arthur Hong
  */
 
 /*
@@ -87,271 +87,76 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* fde670 yellow */
-
 body {
     font-family: "Titillium Web";
-    background: #f2f8f7;
-    color: #444;
+    background-color: #EEE;
 }
 
 header {
-    background: #213142;
-    border-bottom: 4px solid #4b6f96;
+    background: -moz-linear-gradient(top, #484e98 0%, #3e82ae 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484e98), color-stop(100%,#3e82ae)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #484e98 0%,#3e82ae 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #484e98 0%,#3e82ae 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #484e98 0%,#3e82ae 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #484e98 0%,#3e82ae 100%); /* W3C */
+    border-bottom-style: solid;
+    border-bottom-color: #484e98;
+    border-bottom-width: 6px;
 }
 
-.logo {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.logo img {
-
-}
-
-nav ul {
-    margin: 0;
-}
-
-nav li a {
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    color: white;
+a {
     text-decoration: none;
-    padding: 50px 0px 52px 3px;
-    width: 100%;
-    border-bottom: 4px solid transparent;
-    -webkit-transition: all .05s ease-out;
-    margin-bottom: -4px;
 }
 
-nav li a:hover {
-    border-bottom: 10px solid #fde670;
-    padding-bottom: 46px;
-}
-
-nav li a.current {
-    border-bottom: 10px solid #4b6f96;
-    padding-bottom: 46px;
-    color: #f2f8f7;
-}
-
-nav li a.current:hover {
-    border-color: #fde670;
-}
-
-nav a span {
-    text-transform: none;
-    font-weight: 500;
-    display: block;
-}
-
-.main.home {
-    background: url(../images/zephyr-team-mono.jpg) bottom center no-repeat;
-}
-
-.main .wrap {
-    border-bottom: 1px solid #ccc;
+.wrapper {
     position: relative;
 }
 
-.main .bot-cen {
-    position: absolute;
-    width: 150px;
-    bottom: 5px;
-    left: 388px;
-    padding: 9px 17px;
-/*    background: rgb(242, 248, 247);
-    background: rgba(242, 248, 247, .4);*/
-    text-shadow: 0 0 10px rgba(0,0,0,.2);
-    text-align: center;
-    color: rgb(242, 248, 247);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    -webkit-transition: all .1s ease-out;
+.menu {
+    padding: 0 0 0 225px;
 }
 
-.bot-cen:hover {
-    color: #444;
-    text-shadow: 0 0 0 transparent;
-    background: rgb(242, 248, 247);
-}
-
-.hero {
-    margin-bottom: 440px;
-}
-
-.hero h1 {
-    margin: 0;
-    margin-top: 100px;
-    margin-bottom: 42px;
-    font-size: 34px;
-    line-height: 48px;
-    font-weight: 100;
-}
-
-.hero h1 a {
-    border-bottom: 1px dotted;
-    text-decoration: none;
-    color: #444;
-    -webkit-transition: all .1s ease-out;
-}
-
-.hero h1 a:hover {
-    color: #4b6f96;
-    background: #fde670;
-}
-
-.hero .btn {
-    display: inline-block;
-    color: white;
-    background: #213142;
-    text-decoration: none;
-    padding: 15px 20px;
-}
-
-.hero a:hover {
-    background: #4b6f96;
-}
-
-.content .wrap{
-    padding: 34px 0;
-}
-
-.rt_content .first, .rt_content p:first-child {
-    font-size: 1.2em;
-}
-
-.content h2 {
-    font-weight: 700;
-}
-
-.content .rt_content {
-    padding-top: 6px;
-}
-
-.rt_content a, .main p a {
-    border-bottom: 1px dotted;
-    text-decoration: none;
-    color: #4b6f96;
-}
-
-.rt_content a:hover, .main p a:hover {
-    color: #4b6f96;
-    background: #fde670;
-}
-
-.team-bios-intro {
-    /*border-bottom: 1px solid #ccc;*/
-    background: url(../images/zephyr-team-mono.jpg) bottom center no-repeat;
-    width: 960px;
-    height: 468px;
-    /*border-bottom: 1px solid #ccc;*/
-    /*margin-top: -68px;*/
-}
-
-.meet-the-team-bios {
-    /*padding-left: 100px !important;*/
-    width: 855px !important;
-    font-size: 14px;
-    margin-bottom: 34px;
-    /*margin-top: 395px;*/
-}
-
-.meet-the-team-bios .person {
-    font-size: 11px;
-}
-
-.jonas {
-    width: 150px !important;
-    border-top: 10px solid #203041;
-}
-
-.john {
-    border-top: 10px solid #d1c0ad;
-    width: 145px !important;
-}
-
-.rebecca {
-    border-top: 10px solid #fce570;
-}
-
-.jason {
-    border-top: 10px solid #68203a;
-}
-
-.arthur {
-    border-top: 10px solid #bddcd6;
-}
-
-.meet-the-team h1 {
-    font-size: 34px;
-    line-height: 48px;
-    font-weight: 100;
-    text-align: center;
-    z-index: 10;
-}
-
-.meet-the-team-bios h3 {
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-.meet-the-team-bios h4 {
-    margin-top: 0;
-    font-weight: 500;
-}
-
-footer {
-    padding: 34px 0;
-}
-
-hr {
-    margin-bottom: 34px;
-}
-
-footer p {
-    font-size: 11px;
-    line-height: 17px;
-    margin-bottom: 1.4em;
-}
-
-footer a {
-    color: #4b6f96;
-    text-decoration: none;
-}
-
-footer a:hover {
-    background: #fde670;
-}
-
-.img_link:hover {
-    background: transparent;
-}
-
-footer h4 {
-    margin: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-footer ul {
-    padding: 0;
-    margin: 11px 0 1.4em 0;
-}
-
-footer ul li {
+.menu li {
+    margin-right: 20px;
     list-style: none;
+    color: white;
+    float: left;
     font-size: 11px;
 }
 
-footer ul li a {
-    line-height: 17px;
-    color: #4b6f96;
+.menu li a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
 }
+
+.menu li a:hover {
+    text-shadow: 0px 2px 5px #AAA;
+}
+
+.menu li a.current {
+    text-shadow: 0px 4px 5px #999;   
+}
+
+#menu {
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0px auto;
+}
+
+.particle-header-img {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-repeat: none;
+}
+
+.header-logo {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
 
 /* ==========================================================================
    Helper classes
