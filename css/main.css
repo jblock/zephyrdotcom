@@ -150,6 +150,10 @@ a {
     padding-left: 20px;
 }
 
+.margin-top {
+    margin-top: 50px;
+}
+
 #menu {
     clear: both;
     padding-top: 10px;
@@ -162,9 +166,8 @@ div#timeline-start, div#timeline-end {
     width: 100px;
     text-align: center;
     font-size: 16px;
-    background: #444;
+    background: #222;
     margin: 0 auto;
-    margin-top: 50px;
     color: white;
     -webkit-border-radius: 25px;
 }
@@ -173,7 +176,7 @@ div#timeline {
     position: relative;
     left: 50%;
     width: 440px;
-    border-left: 6px solid #444;
+    border-left: 6px solid #222;
     padding: 15px 0px;
 }
 
@@ -186,6 +189,11 @@ div#timeline .text-module {
     line-height: 20px;
     -webkit-border-radius: 7px;
     box-shadow: 0px 0px 10px #AAA;
+    opacity: 0.90;
+}
+
+div#timeline .text-module.left {
+    left: -450px;
 }
 
 div#timeline .text-module > h3 {
@@ -203,6 +211,16 @@ div#timeline .text-module > h2 {
     font-size: 20px;
     color: black;
     margin-bottom: 10px;
+}
+
+div#timeline .text-module > h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+div #timeline > img {
+    position: absolute;
 }
 
 /* ==========================================================================
