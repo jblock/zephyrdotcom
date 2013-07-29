@@ -113,11 +113,11 @@ a {
 }
 
 .menu {
-    padding: 0 0 0 225px;
+    padding: 0 0 0 210px;
 }
 
 .menu li {
-    margin-right: 20px;
+    margin-right: 30px;
     list-style: none;
     color: white;
     float: left;
@@ -138,13 +138,6 @@ a {
     text-shadow: 0px 4px 5px #999;   
 }
 
-#menu {
-    clear: both;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    margin: 0px auto;
-}
-
 .particle-header-img {
     top: 0;
     right: 0;
@@ -157,6 +150,24 @@ a {
     padding-left: 20px;
 }
 
+#menu {
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0px auto;
+}
+
+div#timeline-start, div#timeline-finish {
+    padding: 8px 15px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    background: #444;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: white;
+    -webkit-border-radius: 25px;
+}
 
 /* ==========================================================================
    Helper classes
