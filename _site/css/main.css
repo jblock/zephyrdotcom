@@ -157,7 +157,7 @@ a {
     margin: 0px auto;
 }
 
-div#timeline-start, div#timeline-finish {
+div#timeline-start, div#timeline-end {
     padding: 8px 15px;
     width: 100px;
     text-align: center;
@@ -167,6 +167,42 @@ div#timeline-start, div#timeline-finish {
     margin-top: 50px;
     color: white;
     -webkit-border-radius: 25px;
+}
+
+div#timeline {
+    position: relative;
+    left: 50%;
+    width: 440px;
+    border-left: 6px solid #444;
+    padding: 15px 0px;
+}
+
+div#timeline .text-module {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    background: #FAFAFA;
+    font-size: 13px;
+    line-height: 20px;
+    -webkit-border-radius: 7px;
+    box-shadow: 0px 0px 10px #AAA;
+}
+
+div#timeline .text-module > h3 {
+    padding: 2px 10px;
+    background: #D01874;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+div#timeline .text-module > h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
 }
 
 /* ==========================================================================
