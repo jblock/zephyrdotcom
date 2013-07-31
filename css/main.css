@@ -108,6 +108,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 13px;
+}
+
 .wrapper {
     position: relative;
 }
@@ -154,10 +158,28 @@ a {
     margin-top: 50px;
 }
 
+.center-align {
+    text-align: center;
+}
+
 .opaque {
     opacity: .90;
 }
 
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+.prototype-photo {
+    width: 280px;
+    height: auto;
+}
+
+.feature-photo {
+    width: 170px;
+    height: auto;
+}
+/*
 .circle-1 {
     border-radius: 50%;
     width: 2px;
@@ -207,7 +229,7 @@ a {
     border-radius: 50%;
     width: 200px;
     height: 200px; 
-}
+}*/
 
 #menu {
     clear: both;
@@ -293,6 +315,14 @@ div#timeline .text-module > h4 {
 
 div #timeline > img {
     position: absolute;
+}
+
+div.separator { 
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    text-align: left;
+    float: left;
 }
 
 /* ==========================================================================
