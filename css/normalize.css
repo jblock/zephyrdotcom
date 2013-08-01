@@ -31,6 +31,7 @@ body {
 
 .grid_1,
 .grid_2,
+.grid_2_5,
 .grid_3,
 .grid_4,
 .grid_5,
@@ -81,6 +82,10 @@ body {
 
 .container_12 .grid_2 {
   width: 140px;
+}
+
+.container_12 .grid_2_5 {
+  width: 180px;
 }
 
 .container_12 .grid_3 {
