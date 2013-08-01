@@ -325,6 +325,32 @@ div.separator {
     float: left;
 }
 
+/* team page */
+
+.main.meet-the-team h3 {
+    font-size: 1em;
+}
+
+.main.meet-the-team h4 {
+    font-size: 0.7em;
+}
+
+.main.meet-the-team .teampic {
+    margin-left:-20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -513,4 +539,13 @@ div.separator {
     h3 {
         page-break-after: avoid;
     }
+
+
+
+ 
+
+
+
+
+
 }
