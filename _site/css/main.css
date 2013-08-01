@@ -117,7 +117,7 @@ p {
 }
 
 .menu {
-    padding: 0 0 0 210px;
+    padding: 0 0 0 240px;
 }
 
 .menu li {
@@ -139,7 +139,7 @@ p {
 }
 
 .menu li a.current {
-    text-shadow: 0px 4px 5px #999;   
+    text-shadow: 0px 4px 10px #999;   
 }
 
 .particle-header-img {
