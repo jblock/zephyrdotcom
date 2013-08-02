@@ -17,12 +17,13 @@
 		<img class="particle-header-img" src="{{site.baseurl}}/images/header-particles.png"/>
 		<div class="wrapper container_12">
 			<div class="header-logo">
-				<a href="{{site.baseurl}}/" class="grid_4 suffix_4 logo">
+				<a href="{{site.baseurl}}/" class="grid_4 prefix_4 suffix_4 logo">
 					<img class="padding-top" src="{{site.baseurl}}/images/zephyr-logo.png" width="245" height="142"{{site.baseurl}}/>
 				</a>
 			</div>
 			<div id="menu">
 				<div class="container_12">
+					<div class="menu_container grid_10 prefix_1">
 					<ul class="menu">
 						<li>
 							<a {% if page.title == "About the Project" %}class="current"{% endif %} href="{{site.baseurl}}/about">
@@ -45,6 +46,7 @@
 							</a>
 						</li>
 					</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -55,21 +57,20 @@
 			{{content}}
 		</div>
 	</div>
-<!--	<footer>
+	<footer>
 		<div class="wrap container_12">
-			<div class="grid_11 prefix_1">
-				<div class="grid_5 alpha">
-					<a class="img_link" href="#"><img src="{{site.baseurl}}/images/zephyr-logo-footer.png" /></a>
-					<p>Our goal is to understand the many layers of interaction within the final assembly process of the 787 Dreamliner and envision a financially viable solution that facilitates efficient communication.</p>
+			<div class="logos grid_10 prefix_1">
+<!-- 					<p>Our goal is to understand the many layers of interaction within the final assembly process of the 787 Dreamliner and envision a financially viable solution that facilitates efficient communication.</p>
 					<h4>About the Human-Computer Interaction Institute</h4>
-					<p>The HCII’s mission is to understand and create technology that harmonizes with and improves human capabilities, goals, and social environments through interdisciplinary research and education in design, computer science, and behavioral and social sciences. <a href="http://hcii.cmu.edu/">Learn More about the HCII</a>.</p>
+					<p>The HCII’s mission is to understand and create technology that harmonizes with and improves human capabilities, goals, and social environments through interdisciplinary research and education in design, computer science, and behavioral and social sciences. <a href="http://hcii.cmu.edu/">Learn More about the HCII</a>.</p> -->
 					<p>
+						<a class="img_link" href="{{site.baseurl}}"><img src="{{site.baseurl}}/images/zephyr-logo-footer.png" /></a>
 						<a class="img_link" href="http://www.hcii.cmu.edu/"><img src="{{site.baseurl}}/images/zephyr-client-logo-03.png" /></a>
 						<a class="img_link" href="http://www.boeing.com"><img src="{{site.baseurl}}/images/zephyr-client-logo-01.png" /></a>
 						<a class="img_link" href="http://www.cmu.edu/"><img src="{{site.baseurl}}/images/zephyr-client-logo-02.png" /></a>
 					</p>
 				</div>
-				<div class="col grid_2 prefix_2">
+				<!-- <div class="col grid_2 prefix_2">
 					<h4>Navigation</h4>
 					<ul>
 						<li><a href="{{site.baseurl}}/about">About the Project</a></li>
@@ -96,10 +97,10 @@
 						<li>Jerrod Larson</li>
 						<li>Michael Marfizo</li>
 					</ul>
-				</div>
-			</div>
+				</div> -->
+			<!-- </div> -->
 		</div>
-	</footer>-->
+	</footer>
 	<script>
       var _gaq=[['_setAccount','UA-40020678-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

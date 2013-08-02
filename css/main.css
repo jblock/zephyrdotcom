@@ -89,7 +89,7 @@ textarea {
 
 body {
     font-family: "Titillium Web";
-    background-color: #EEE;
+    background-color: #fafafa;
 }
 
 header {
@@ -116,8 +116,13 @@ p {
     position: relative;
 }
 
+.menu_container {
+    text-align: center;
+}
+
 .menu {
-    padding: 0 0 0 240px;
+    padding: 0 0 0 0;
+    display: inline-block;
 }
 
 .menu li {
@@ -125,21 +130,29 @@ p {
     list-style: none;
     color: white;
     float: left;
-    font-size: 11px;
+    /*font-size: 11px;*/
+}
+
+.menu li:last-child {
+    margin-right: 0;
 }
 
 .menu li a {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 100;
     color: white;
+    display: inline-block;
+    padding: 4px;
 }
 
 .menu li a:hover {
     text-shadow: 0px 2px 5px #AAA;
+    background: rgba(255,255,255,.2);
 }
 
 .menu li a.current {
-    text-shadow: 0px 4px 10px #999;   
+    text-shadow: 0px 4px 10px #999; 
+    border: 1px solid rgba(255,255,255,.4);  
 }
 
 .particle-header-img {
@@ -170,15 +183,41 @@ p {
     margin-bottom: 50px;
 }
 
+.proto-photo-container {
+    text-align: center;
+}
+
 .prototype-photo {
     width: 280px;
     height: auto;
+    display: inline-block;
 }
 
 .feature-photo {
     width: 170px;
     height: auto;
 }
+
+footer  {
+    margin-top: 60px;
+}
+
+footer .wrap {
+    border-top: 1px solid #ccc; 
+}
+
+footer .logos {
+    text-align: center;
+}
+
+.img_link {
+    margin-right: 12px;
+}
+
+.img_link:last-child {
+    margin-right: 0;
+}
+
 /*
 .circle-1 {
     border-radius: 50%;
@@ -323,6 +362,10 @@ div.separator {
     padding-bottom: 60px;
     text-align: left;
     float: left;
+}
+
+div.separator:last-child {
+    border-bottom: 0px;
 }
 
 /* ==========================================================================
