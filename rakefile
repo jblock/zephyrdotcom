@@ -41,6 +41,6 @@ end
 desc "jtb"
 task :jtb => :buildtest do
 	puts "Deploying to server"
-	system "rsync -rtz --delete _site/ /Users/jasontheblock/code/jblockdotcom/projects/zephyr && cd /Users/jasontheblock/code/jblockdotcom/ && rake deploy"
+	system "rsync -rtzv --progress --delete _site/ /Users/jasontheblock/code/jblockdotcom/projects/zephyr && cd /Users/jasontheblock/code/jblockdotcom/ && rake deploy"
 	puts "Done!"
 end
