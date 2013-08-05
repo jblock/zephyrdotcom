@@ -1,3 +1,22 @@
+namespace :ghi do
+	task :list do 
+		system "bundle exec ghi list"
+	end
+	task :open do
+		system "bundle exec ghi open"
+	end
+	task :close do
+		system "bundle exec ghi close"
+	end
+	task :assign do
+		system "bundle exec ghi assign"
+	end
+	task :auth do
+		name = ENV["GITHUB_NAME"] || "jblock"
+		system "bundle exec ghi --auth #{name}"
+	end
+end
+
 desc "launch preview"
 task :preview do
 	system "bundle exec jekyll --auto --server"
