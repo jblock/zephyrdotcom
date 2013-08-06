@@ -204,8 +204,20 @@ p {
     text-align: center;
 }
 
+.prototype .grid_12 img,
+.prototype .grid_4 img,
+.prototype .grid_2_5 img,
+.prototype .grid_6 img {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.prototype .grid_12 img {
+    width: 940px;
+}
+
 .proto-photo-full-size {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .proto-photo-full-size img {
@@ -213,7 +225,6 @@ p {
 }
 
 .prototype-photo {
-    width: 280px;
     height: auto;
     display: inline-block;
 }
@@ -335,6 +346,7 @@ h1 {
 
 .white-box a {
     color: hsl(183, 73%, 80%);
+    text-shadow: 0 2px 3px hsla(0, 0%, 0%, 0.3);
 }
 
 .white-box a:hover {
