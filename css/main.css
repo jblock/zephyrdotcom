@@ -204,6 +204,14 @@ p {
     text-align: center;
 }
 
+.proto-photo-full-size {
+    margin-top: 60px;
+}
+
+.proto-photo-full-size img {
+    text-align: center;
+}
+
 .prototype-photo {
     width: 280px;
     height: auto;
@@ -213,6 +221,8 @@ p {
 .feature-photo {
     width: 170px;
     height: auto;
+    box-sizing: border-box;
+    border: 4px solid #474e97;
 }
 
 footer  {
