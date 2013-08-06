@@ -50,13 +50,6 @@ task :package do
   puts "done."
 end
 
-# desc "deploy"
-# task :deploy => :build do
-# 	puts "Deploying to server"
-# 	system "rsync -rtz --delete _site/ jasonthe@jasontheblock.com:~/public_html/"
-# 	puts "Done!"
-# end
-
 desc "jtb"
 task :jtb => :buildtest do
 	puts "Deploying to server"
