@@ -124,6 +124,10 @@ p {
     font-size: 16px;
 }
 
+.emphasis {
+    color: #474e97;
+}
+
 .wrapper {
     position: relative;
 }
