@@ -442,7 +442,7 @@ div#timeline-start, div#timeline-end {
     width: 100px;
     text-align: center;
     font-size: 16px;
-    background: #222;
+    background: #D01873;
     margin: 0 auto;
     color: white;
     -webkit-border-radius: 25px;
@@ -452,7 +452,7 @@ div#timeline {
     position: relative;
     left: 50%;
     width: 440px;
-    border-left: 6px solid #222;
+    border-left: 6px solid #D01873;
     padding: 15px 0px;
 }
 
